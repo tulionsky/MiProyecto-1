@@ -1,46 +1,49 @@
 ﻿Console.WriteLine("Hola amigo :)");
-Console.WriteLine("Este es un programa para la realizacion de operaciones con numeros.");
+Console.WriteLine("Este es un programa para el uso de datos numericos.");
 Console.WriteLine("Por favor sigue las instrucciones, de lo contrario habra un error.");
 
-string nota1, notaM;
-Console.WriteLine("Ingrese su texto para que lo imprima en Mayuscula");
-nota1 = Console.ReadLine();
-notaM = nota1.ToUpper();
-Console.WriteLine("Este es su texto " + notaM);
+double noc = 0.5;
+Console.WriteLine(" 1. Ingrese los datos que se le pide");
+Console.WriteLine("-Ingrese la base del triangulo-");
+double bas = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("-Ingrese la altura del triangulo-");
+int alt = Convert.ToInt32(Console.ReadLine());
+double respuesta = noc * bas * alt;
+Console.WriteLine("El resultado es --> " + respuesta);
 
-string nota2, notam;
-Console.WriteLine("Ingrese su texto para que lo imprima en Minusculas");
-nota2 = Console.ReadLine();
-notam = nota2.ToLower();
-Console.WriteLine("Este es su texto " + notam);
+Console.WriteLine("2. Ingrese los datos que se le pide");
+double pi = 3.14159;
+double cal = 1.333333333;
+Console.WriteLine("Ingrese el radio de la esfera");
+double radio = Convert.ToInt32(Console.ReadLine());
+double resul1 = radio * radio * radio;
+double resul2 = cal * pi * resul1;
+Console.WriteLine("El volumen de la esfera es --> " + resul2);
 
-string nota3;
-Console.WriteLine("Ingrese su texto que quiere imprimir al reves");
-nota3 = Console.ReadLine();
-char[] notaInv = nota3.ToCharArray();
-Array.Reverse(notaInv);
-string notaNueva = new string(notaInv);
-Console.WriteLine("Este es su texto " + notaNueva);
 
-string nota4;
-Console.WriteLine("Ingrese su cadena de texto");
-nota4 = Console.ReadLine();
-Console.WriteLine("Ingrese la palabra que quiere buscar");
-string Pbuscar = Console.ReadLine();
-string notaMinus = nota4.ToLower();
-bool Pbuscada = nota4.Contains(notaMinus);
+Console.WriteLine(" 3. Ingrese los datos que se le pide");
+Console.WriteLine("Ingrese los datos del punto A");
+Console.WriteLine("Ingrese el dato de X");
+double Ax = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Ingrese el dato de Y");
+double Ay = Convert.ToInt32(Console.ReadLine());
 
-if (Pbuscada)
-{
-    Console.WriteLine("La palabra " + Pbuscar + " Fue encontrada ");
-}
-else
-{
-    Console.WriteLine("La palabra" + Pbuscar + "No fue encontrada en el texto ");
-}
+Console.WriteLine("Ingrese los datos del punto B");
+Console.WriteLine("Ingrese el dato de X");
+double Bx = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Ingrese el dato de Y");
+double By = Convert.ToInt32(Console.ReadLine());
+double rDistancia = Math.Sqrt(Math.Pow(Bx - Ax, 2) + Math.Pow(By - Ay, 2));
+Console.WriteLine("La distancia entre los dos puntos es --> " + rDistancia);
 
-string nota5;
-Console.WriteLine("Ingrese su texto del cual quiere contar las vocales");
-nota5 = Console.ReadLine();
-int Cvocales = nota5.Count(c => "aeiouAEIOU".Contains(c));
-Console.WriteLine("Este es la cantidad de vocales que tiene su texto " + Cvocales);
+Console.WriteLine(" 4. Ingrese los datos que se le pide");
+Console.WriteLine("Ingrese los grados Celsius");
+double cel = double.Parse(Console.ReadLine());
+double resultadoFah = (cel * 9 / 5) + 32;
+Console.WriteLine("La temperatura en Fahrenheit son --> " + resultadoFah);
+
+Console.WriteLine("5. Ingrese los datos que se le pide");
+Console.WriteLine("Ingrese los grados fahrenheit");
+double fah = double.Parse(Console.ReadLine());
+double resultadoCel = (fah - 32) * 5 / 9;
+Console.WriteLine("La temperatura en Fahrenheit son --> " + resultadoCel);
