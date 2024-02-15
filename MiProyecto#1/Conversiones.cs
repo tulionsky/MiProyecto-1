@@ -1,40 +1,49 @@
-﻿using System.Timers;
-
-int entero, num3, num4, ent;
-decimal num1, dec;
-float num2, flot;
-char num5;
-
-
-Console.WriteLine("Hola amigo :)");
-Console.WriteLine("Este es un programa para la realizacion de convercion de numeros.");
+﻿Console.WriteLine("Hola amigo :)");
+Console.WriteLine("Este es un programa para la realizacion de operaciones con numeros.");
 Console.WriteLine("Por favor sigue las instrucciones, de lo contrario habra un error.");
-Console.WriteLine("1. Por favor agrega el numero entero que desees convertir a decimal");
-entero =Convert.ToInt32(Console.ReadLine());
-num1 = (decimal)entero;
-Console.WriteLine("**La conversion resulto exitosa**");
-Console.WriteLine("El numero que ingresaste convertido en decimal es: " + num1);
 
-Console.WriteLine("2. Por favor agrega el numero decimal que desees convertir a flotante");
-dec = Convert.ToDecimal(Console.ReadLine());
-num2 = (float)dec;
-Console.WriteLine("**La conversion resulto exitosa**");
-Console.WriteLine("El numero que ingresaste convertido en Flotante es: " + num2);
+int num1, num2;
+int resultado1;
+Console.WriteLine("Ingrese los numeros enteros que quiere Sumar");
+Console.WriteLine("Ingrese primer numero");
+num1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese segundo numero");
+num2 = int.Parse(Console.ReadLine());
+resultado1 = num1 + num2;
+Console.WriteLine("El resultado es " + resultado1);
 
-Console.WriteLine("3. Por favor agrega el numero flotante que desees convertir a entero");
-flot = Convert.ToSingle(Console.ReadLine());
-num3 = (Int32)flot;
-Console.WriteLine("**La conversion resulto exitosa**");
-Console.WriteLine("El numero que ingresaste convertido en Entero es: " + num3);
+decimal num3, num4, resultado2;
+Console.WriteLine("Ingrese los numeros enteros que quiere Restar");
+Console.WriteLine("Ingrese primer numero");
+num3 = decimal.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese segundo numero");
+num4 = decimal.Parse(Console.ReadLine());
+resultado2 = num3 - num4;
+Console.WriteLine("El resultado es " + resultado2);
 
-Console.WriteLine("4. Por favor agrega el numero Caracter que desees convertir a entero");
-num4 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("**La conversion resulto exitosa**");
-Console.WriteLine("El numero que ingresaste convertido en Entero es: " + num4);
+float num5, num6, resultado3;
+Console.WriteLine("Ingrese los numeros flotantes que quiere Multiplicar");
+Console.WriteLine("Ingrese primer numero");
+num5 = float.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese segundo numero");
+num6 = float.Parse(Console.ReadLine());
+resultado3 = num5 * num6;
+Console.WriteLine("El resultado es " + resultado3);
 
-Console.WriteLine("5. Por favor agrega el numero entero que desees convertir a caracter");
-ent = Convert.ToInt32(Console.ReadLine());
-num5 = (char)ent;
-Console.WriteLine("**La conversion resulto exitosa**");
-Console.WriteLine("El numero que ingresaste convertido en Entero es: " + num5); //En esta parte mostrara una letra, esa letra es la respectiva al numero que se ingreso.
+int num7, num8, resultado4;
+Console.WriteLine("Ingrese los numeros enteros que quiere Dividir");
+Console.WriteLine("Ingrese primer numero");
+num7 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese segundo numero");
+num8 = int.Parse(Console.ReadLine());
+resultado4 = num7 / num8;
+Console.WriteLine("El resultado es " + resultado4);
 
+int num9, num10, resultado5;
+Console.WriteLine("Ingrese los numeros enteros que quiere ver su modul");
+Console.WriteLine("Ingrese primer numero");
+num9 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese segundo numero");
+num10 = int.Parse(Console.ReadLine());
+resultado5 = num9 % num10;
+Console.WriteLine("El resultado de" + num9 + "entre" + num10 + "es el modulo " + resultado5);
