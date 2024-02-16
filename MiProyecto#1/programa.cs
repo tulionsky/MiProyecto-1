@@ -1,5 +1,4 @@
-﻿
-Console.WriteLine("Este es un programa para el uso de datos numericos.");
+﻿Console.WriteLine("Este es un programa para el uso de datos numericos.");
 Console.WriteLine("Por favor sigue las instrucciones, de lo contrario habra un error.");
 
 double noc = 0.5;
