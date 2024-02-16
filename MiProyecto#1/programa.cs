@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Hola amigo :)");
+﻿
 Console.WriteLine("Este es un programa para el uso de datos numericos.");
 Console.WriteLine("Por favor sigue las instrucciones, de lo contrario habra un error.");
 
